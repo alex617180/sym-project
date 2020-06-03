@@ -17,4 +17,13 @@ class ConferenceController extends AbstractController
             'controller_name' => 'ConferenceController',
         ]);
     }
+    /**
+     * @Route("/", name="homepage")
+     */
+    public function home()
+    {
+        return $this->render('conference/index.html.twig', [
+            'controller_name' => 'ConferenceController',
+        ]);
+    }
 }
